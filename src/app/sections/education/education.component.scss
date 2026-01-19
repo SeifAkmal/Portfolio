@@ -1,6 +1,6 @@
 @use '../../styles/global' as *;
+@use '../../styles/variables' as *;
 
-/* Education Section */
 .education-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -10,62 +10,62 @@
 }
 
 .education-card {
-  background: var(--glass-bg);
+  background: $glass-bg;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border);
+  border: 1px solid $glass-border;
   border-radius: 20px;
   padding: 2.5rem;
   position: relative;
   overflow: hidden;
-}
 
-.education-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 0;
-  background: linear-gradient(180deg, var(--purple-start), var(--purple-end));
-  transition: height 0.4s ease;
-  border-radius: 20px 0 0 20px;
-}
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: linear-gradient(180deg, $purple-start, $purple-end);
+    transition: height 0.4s ease;
+    border-radius: 20px 0 0 20px;
+  }
 
-.education-card:hover::before {
-  height: 100%;
-}
+  &:hover {
+    border-color: $purple-mid;
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(139, 92, 246, 0.2);
 
-.education-card:hover {
-  border-color: var(--purple-mid);
-  transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(139, 92, 246, 0.2);
-}
+    &::before {
+      height: 100%;
+    }
+  }
 
-.education-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: var(--text-primary);
-  font-weight: 700;
-}
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: $text-primary;
+    font-weight: 700;
+  }
 
-.education-card .institution {
-  color: var(--purple-end);
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
-}
+  .institution {
+    color: $purple-end;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
 
-.education-card .area {
-  color: var(--text-secondary);
-  margin-bottom: 0.75rem;
-  font-size: 1.05rem;
-}
+  .area {
+    color: $text-secondary;
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+  }
 
-.education-card .dates {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  font-weight: 500;
+  .dates {
+    color: $text-muted;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
 }
 
 .certifications {
@@ -73,14 +73,23 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-}
 
-.certifications h3 {
-  font-size: 2.25rem;
-  margin-bottom: 2.5rem;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: -0.5px;
+  h3 {
+    font-size: 2.25rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+        background: linear-gradient(90deg, $text-primary, $purple-end, $text-primary);
+
+    background-size: 200% 100%;
+    animation: textGradientMove 4s linear infinite;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 .cert-list {
@@ -89,34 +98,35 @@
 }
 
 .cert-item {
-  background: var(--glass-bg);
+  background: $glass-bg;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--glass-border);
+  border: 1px solid $glass-border;
   border-radius: 16px;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover {
+    border-color: $purple-mid;
+    transform: translateX(8px);
+    box-shadow: 0 8px 32px rgba(139, 92, 246, 0.2);
+  }
+
+  .name {
+    font-weight: 600;
+    color: $text-primary;
+    font-size: 1.1rem;
+  }
+
+  .issuer {
+    color: $text-secondary;
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+  }
 }
 
-.cert-item:hover {
-  border-color: var(--purple-mid);
-  transform: translateX(8px);
-  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.2);
-}
-
-.cert-item .name {
-  font-weight: 600;
-  color: var(--text-primary);
-  font-size: 1.1rem;
-}
-
-.cert-item .issuer {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  margin-top: 0.25rem;
-}
 @media (max-width: 968px) {
   .education-grid {
     grid-template-columns: 1fr;

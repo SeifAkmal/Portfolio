@@ -1,6 +1,6 @@
 @use '../../styles/global' as *;
+@use '../../styles/variables' as *;
 
-/* Projects Section */
 #projects {
   background: radial-gradient(ellipse at center, rgba(107, 33, 255, 0.05) 0%, transparent 70%);
 }
@@ -12,62 +12,44 @@
 }
 
 .project-card {
-  background: var(--glass-bg);
+  background: $glass-bg;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border);
+  border: 1px solid $glass-border;
   border-radius: 20px;
   padding: 2.5rem;
   position: relative;
   overflow: hidden;
-}
 
-.project-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(90deg, var(--purple-start), var(--purple-end));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease;
-}
+  &:hover {
+    border-color: $purple-mid;
+    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.25);
+    background: rgba(139, 92, 246, 0.05);
+  }
 
-.project-card:hover::before {
-  transform: scaleX(1);
-}
+  h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: $text-primary;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
 
-.project-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--purple-mid);
-  box-shadow: 0 20px 60px rgba(139, 92, 246, 0.25);
-  background: rgba(139, 92, 246, 0.05);
-}
-
-.project-card h3 {
-  font-size: 1.75rem;
-  margin-bottom: 0.75rem;
-  color: var(--text-primary);
-  font-weight: 700;
-  letter-spacing: -0.5px;
+  p {
+    color: $text-secondary;
+    margin-bottom: 1.75rem;
+    line-height: 1.75;
+    font-size: 1.05rem;
+  }
 }
 
 .project-type {
-  color: var(--purple-end);
+  color: $purple-end;
   font-size: 0.9rem;
   margin-bottom: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-}
-
-.project-card p {
-  color: var(--text-secondary);
-  margin-bottom: 1.75rem;
-  line-height: 1.75;
-  font-size: 1.05rem;
 }
 
 .tech-stack {
@@ -79,55 +61,55 @@
 
 .tech-tag {
   background: rgba(139, 92, 246, 0.1);
-  color: var(--purple-end);
+  color: $purple-end;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-size: 0.875rem;
   border: 1px solid rgba(139, 92, 246, 0.2);
   font-weight: 500;
   transition: all 0.3s ease;
-}
 
-.tech-tag:hover {
-  background: rgba(139, 92, 246, 0.15);
-  border-color: var(--purple-mid);
-  transform: translateY(-2px);
+  &:hover {
+    background: rgba(139, 92, 246, 0.15);
+    border-color: $purple-mid;
+    transform: translateY(-2px);
+  }
 }
 
 .project-links {
   display: flex;
   gap: 1.25rem;
   align-items: center;
+
+  a {
+    color: $text-secondary;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+
+    &::after {
+      content: '→';
+      margin-left: 0.5rem;
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+
+    &:hover {
+      color: $purple-end;
+
+      &::after {
+        transform: translateX(4px);
+      }
+    }
+  }
 }
 
-.project-links a {
-  color: var(--text-secondary);
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  font-weight: 500;
-  position: relative;
-}
-
-.project-links a::after {
-  content: '→';
-  margin-left: 0.5rem;
-  transition: transform 0.3s ease;
-  display: inline-block;
-}
-
-.project-links a:hover {
-  color: var(--purple-end);
-}
-
-.project-links a:hover::after {
-  transform: translateX(4px);
-}
 .coming-soon {
-  color: var(--text-muted);
+  color: $text-muted;
 }
 
-/* Responsive */
 @media (max-width: 968px) {
   .projects-grid {
     grid-template-columns: 1fr;
