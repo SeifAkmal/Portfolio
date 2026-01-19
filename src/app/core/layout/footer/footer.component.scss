@@ -1,0 +1,19 @@
+/* Footer */
+footer {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid var(--glass-border);
+  padding: 3.5rem 0;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+footer p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+}
+footer p span {
+  font-family: 'Oooh Baby', cursive;
+}

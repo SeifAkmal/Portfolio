@@ -1,0 +1,20 @@
+<section id="hero" appObserve>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="animate-text-left" appObserve>{{ basics.name }}</h1>
+        <div class="label animate-text-left text-delay-1" appObserve>{{ basics.label }}</div>
+        <p class="summary animate-text-left text-delay-2" appObserve>{{ basics.summary }}</p>
+        <div class="hero-cta animate-text-left text-delay-3" appObserve>
+          <a href="#projects" class="btn btn-primary"><span>View Projects</span></a>
+          <a href="mailto:${contact.email}" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image animate-card delay-2" appObserve>
+        <div class="image-border">
+          <img src="my-image.jpg" alt="Seif - Professional Photo" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

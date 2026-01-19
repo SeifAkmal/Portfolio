@@ -1,0 +1,40 @@
+<section id="about" appObserve>
+  <div class="container">
+    <div class="section-header">
+      <h2 class="animate-text-right" appObserve>About Me</h2>
+      <p class="animate-text-right text-delay-1" appObserve>
+        Learn more about what I do and feel free to explore my work or get in touch
+      </p>
+    </div>
+
+    <div class="about-content animate-card" appObserve>
+      <p class="animate-text-left" appObserve>
+        You can explore my projects and experience on GitHub and LinkedIn, and reach out to me
+        through the contact details listed there.
+      </p>
+      <p class="animate-text-left text-delay-1" appObserve>El Shorouk, Cairo, Egypt</p>
+
+      <div class="contact-info">
+        <a href="{{ basics.contact.linkedin }}" target="_blank" class="contact-item">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="mailto:{{ basics.contact.email }}" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>{{ basics.contact.email }}</span>
+        </a>
+
+        <a [href]="basics.contact.github" target="_blank" class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+
+        <a href="tel:{{ basics.contact.phone }}" class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>{{ basics.contact.phone }}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

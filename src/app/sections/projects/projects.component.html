@@ -1,0 +1,39 @@
+<section id="projects" appObserve>
+  <div class="container">
+    <div class="section-header">
+      <h2 class="animate-text-right" appObserve>Featured Projects</h2>
+      <p class="animate-text-right text-delay-1" appObserve>
+        A selection of projects I’ve worked on, showing how I turn ideas into working apps
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      @for (project of projects; track $index) {
+        <div class="project-card animate-card" [ngClass]="'delay-' + (($index % 3) + 1)" appObserve>
+          <h3>{{ project.name }}</h3>
+          <div class="project-type">{{ project.type }}</div>
+          <p>{{ project.description }}</p>
+
+          <div class="tech-stack">
+            @for (tech of project.technologies; track $index) {
+              <span class="tech-tag">
+                {{ tech }}
+              </span>
+            }
+          </div>
+
+          <div class="project-links">
+            @if (project.links.github) {
+              <a [href]="project.links.github" target="_blank"> GitHub </a>
+            }
+            @if (project.links.live != 'Coming soon') {
+              <a [href]="project.links.live" target="_blank"> Live Demo </a>
+            } @else {
+              <span class="coming-soon">Coming soon</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
