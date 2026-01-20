@@ -1,5 +1,5 @@
-@use '../../styles/global' as *;
-@use '../../styles/variables' as *;
+@use '../../../styles/global' as *;
+@use '../../../styles/variables' as *;
 
 .skills-grid {
   display: flex;
@@ -11,6 +11,7 @@
 }
 
 .skill-tag {
+  color: $text-secondary;
   background: $glass-bg;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -22,7 +23,6 @@
   font-weight: 500;
   position: relative;
   overflow: hidden;
-
   &::before {
     content: '';
     position: absolute;
@@ -35,8 +35,8 @@
   }
 
   &:hover {
+    color: $text-primary;
     border-color: $purple-mid;
-    transform: translateY(-4px) scale(1.03);
     box-shadow: 0 12px 32px rgba(139, 92, 246, 0.25);
     background: rgba(139, 92, 246, 0.08);
 

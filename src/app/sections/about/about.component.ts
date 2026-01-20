@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { portfolioData } from '../../data/portfolioData';
-import { Observe } from '../../core/directives/observe.directive';
+import { Observe } from '../../shared/directives/observe.directive';
 
 @Component({
   selector: 'app-about',

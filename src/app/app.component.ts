@@ -1,12 +1,15 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { Home } from "./pages/home/home.component";
-import { Navbar } from "./core/layout/navbar/navbar.component";
-import { Footer } from "./core/layout/footer/footer.component";
+import { Hero } from "./sections/hero/hero.component";
+import { About } from "./sections/about/about.component";
+import { Skills } from "./sections/skills/skills.component";
+import { Projects } from "./sections/projects/projects.component";
+import { Education } from "./sections/education/education.component";
+import { Navbar } from './layout/navbar/navbar.component';
+import { Footer } from './layout/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [Home, Navbar, Footer],
+  imports: [ Navbar, Footer, Hero, About, Skills, Projects, Education],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

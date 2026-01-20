@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { portfolioData } from '../../data/portfolioData';
 import { NgClass } from '@angular/common';
-import { Observe } from '../../core/directives/observe.directive';
+import { Observe } from '../../shared/directives/observe.directive';
 
 @Component({
   selector: 'app-projects',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { portfolioData } from '../../../data/portfolioData';
+import { portfolioData } from '../../data/portfolioData';
 
 @Component({
   selector: 'app-navbar',
@@ -8,5 +8,5 @@ import { portfolioData } from '../../../data/portfolioData';
   styleUrl: './navbar.component.scss',
 })
 export class Navbar {
-basics = portfolioData.basics;
+  basics = portfolioData.basics;
 }
