@@ -1,9 +1,9 @@
 <section id="skills" appObserve>
   <div class="container">
-    <div class="section-header">
-      <h2 class="animate-text-left" appObserve>Technical Skills</h2>
-      <p class="animate-text-left text-delay-1" appObserve>Technologies and tools I work with</p>
-    </div>
+    <app-section-title
+      title="Technical Skills"
+      subtitle="Technologies and tools I work with"
+    ></app-section-title>
 
     <div class="skills-grid">
       @for (skill of skills; track $index) {

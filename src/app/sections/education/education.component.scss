@@ -33,7 +33,6 @@
 
   &:hover {
     border-color: $purple-mid;
-    transform: translateY(-4px);
     box-shadow: 0 16px 48px rgba(139, 92, 246, 0.2);
 
     &::before {
@@ -110,8 +109,9 @@
 
   &:hover {
     border-color: $purple-mid;
-    transform: translateX(8px);
+    // transform: translateX(8px);
     box-shadow: 0 8px 32px rgba(139, 92, 246, 0.2);
+    // transition: transform 0.2s ease-in-out;
   }
 
   .name {

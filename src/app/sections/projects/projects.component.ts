@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { portfolioData } from '../../data/portfolioData';
 import { NgClass } from '@angular/common';
 import { Observe } from '../../shared/directives/observe.directive';
+import { SectionTitle } from "../../shared/ui/section-title/section-title.component";
 
 @Component({
   selector: 'app-projects',
-  imports: [NgClass ,Observe],
+  imports: [NgClass, Observe, SectionTitle],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })

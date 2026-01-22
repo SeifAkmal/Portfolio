@@ -1,9 +1,9 @@
 <section id="education" appObserve>
   <div class="container">
-    <div class="section-header">
-      <h2 class="animate-text-left" appObserve>Education</h2>
-      <p class="animate-text-left text-delay-1" appObserve>My education and training background</p>
-    </div>
+    <app-section-title
+      title="Education"
+      subtitle="My education and training background"
+    ></app-section-title>
 
     <div class="education-grid">
       @for (edu of education; track $index) {
