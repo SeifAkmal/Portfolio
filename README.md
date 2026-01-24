@@ -1,21 +1,21 @@
 # 👋 Seif Akmal – Front-End Portfolio
 
-A clean **single-page portfolio landing page** built with **Angular**, created to present my skills, projects, and profile as a **Junior Front-End Developer** in a clear and professional way.
+A clean **single-page portfolio landing page** built with **Angular** to present my skills, selected projects, and profile as a **Junior Front-End Developer** in a clear and focused way.
 
-The focus of this project is **simplicity, performance, and clarity**.  
-No unnecessary complexity. No fake features. Just a solid developer portfolio.
+This project is all about **simplicity, performance, and clarity**.  
+No over-engineering. No unnecessary features. Just a solid, honest portfolio that reflects how I write and structure front-end code.
 
 ---
 
 ## ✨ What This Page Includes
 
-* Hero section with a clear personal introduction
-* Skills overview focused on Front-End development
-* Selected projects with GitHub links
-* Clean UI with dark / light mode
-* Fully responsive layout
-* Smooth, subtle animations without hurting performance
-* Simple contact section
+* Hero section with a clear and direct personal introduction
+* Front-End–focused skills overview
+* Selected projects with direct GitHub links
+* Clean UI with dark / light mode support
+* Fully responsive layout across all screen sizes
+* Smooth, subtle animations with performance in mind
+* Simple and accessible contact section
 
 ---
 
@@ -23,10 +23,10 @@ No unnecessary complexity. No fake features. Just a solid developer portfolio.
 
 * **Angular**
 * **TypeScript**
-* **Angular Signals** (for UI state like theme toggling)
+* **Angular Signals** for simple UI state management
 * **SCSS**
-* **Modern CSS & transitions**
-* **Responsive design**
+* **Modern CSS transitions**
+* **Responsive design principles**
 
 ---
 
@@ -34,14 +34,15 @@ No unnecessary complexity. No fake features. Just a solid developer portfolio.
 
 This portfolio is intentionally built as a **single-page landing**.
 
-Goals:
-* Fast load time
+The goal is simple:
+* Fast loading and smooth performance
 * Clear content hierarchy
-* No over-engineering
-* Code that is easy to read and maintain
-* A realistic representation of my current skill level
+* Clean, readable, and maintainable code
+* No over-engineering or unnecessary complexity
+* A realistic representation of my current Front-End skill level
 
 ---
+
 
 ## 🚀 Run Locally
 
