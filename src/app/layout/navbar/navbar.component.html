@@ -7,6 +7,10 @@
       <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
       <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
       <li><a href="#education" (click)="closeMenu()">Education</a></li>
+      <label class="switch" [class.light]="theme.isLight()">
+        <input type="checkbox" (click)="theme.toggleTheme()" [checked]="theme.isLight()" />
+        <span class="slider"></span>
+      </label>
     </ul>
     @if (!isMenuOpen()) {
       <button class="mobile-menu-btn" (click)="openMenu()">☰</button>

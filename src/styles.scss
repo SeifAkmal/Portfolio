@@ -1,4 +1,6 @@
-@use 'styles/variables' as *;
+@use './styles/theme-vars' as *;
+
+@use './styles/themes' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Oooh+Baby&family=Protest+Revolution&display=swap');
 @import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -17,12 +19,6 @@
 html,
 body {
   overflow-x: hidden;
-}
-body {
-  font-family: 'Comic Relief', system-ui;
-  background: radial-gradient(ellipse at top, #1a0f2e 0%, #0b0b0f 50%, #000000 100%);
-  background-attachment: fixed;
-  color: $text-primary;
 }
 
 .container {

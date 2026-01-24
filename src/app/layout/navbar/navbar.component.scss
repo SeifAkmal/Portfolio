@@ -1,10 +1,10 @@
-@use '../../../styles/variables' as *;
+@use '../../../styles/theme-vars' as *;
 
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(11, 11, 15, 0.7);
+  background: $bg-nav;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid $glass-border;
@@ -73,8 +73,9 @@ nav {
     display: flex;
     list-style: none;
     gap: 2.5rem;
-
-    li {
+    align-items: center;
+    li,
+    label {
       opacity: 0;
       transform: translateY(-20px);
       animation: slideInDown 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
@@ -97,6 +98,58 @@ nav {
 
       &:nth-child(5) {
         animation-delay: 0.7s;
+      }
+      &:nth-child(6) {
+        animation-delay: 0.9s;
+      }
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 3.5em;
+      height: 2em;
+      font-size: 0.9rem;
+
+      input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        --background: ;
+
+        position: absolute;
+        inset: 0;
+        cursor: pointer;
+        background-color: #28096b;
+        border-radius: 30px;
+        transition: 0.5s;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 1.4em;
+          height: 1.4em;
+          left: 10%;
+          bottom: 15%;
+          border-radius: 50%;
+          background: #28096b;
+          box-shadow: inset 8px -4px 0 0 #fff000;
+          transition: 0.5s;
+        }
+      }
+
+      &.light {
+        input:checked + .slider {
+          background-color: #522ba7;
+
+          &::before {
+            transform: translateX(100%);
+            box-shadow: inset 15px -4px 0 15px #fff000;
+          }
+        }
       }
     }
   }

@@ -1,5 +1,6 @@
 import { Component, HostListener, signal, ElementRef, inject } from '@angular/core';
 import { portfolioData } from '../../data/portfolioData';
+import { Theme } from '../../core/services/theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +12,7 @@ export class Navbar {
   basics = portfolioData.basics;
   isMenuOpen = signal(false);
   elementRef = inject(ElementRef);
+  theme = inject(Theme);
 
   openMenu() {
     this.isMenuOpen.set(true);

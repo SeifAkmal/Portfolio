@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { portfolioData } from '../../data/portfolioData';
 import { Observe } from '../../shared/directives/observe.directive';
+import { Theme } from '../../core/services/theme.service';
 
 @Component({
   selector: 'app-hero',
@@ -10,4 +11,5 @@ import { Observe } from '../../shared/directives/observe.directive';
 })
 export class Hero {
   basics = portfolioData.basics;
+  theme = inject(Theme);
 }

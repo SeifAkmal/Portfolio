@@ -7,12 +7,15 @@
         <p class="summary animate-text-left text-delay-2" appObserve>{{ basics.summary }}</p>
         <div class="hero-cta animate-text-left text-delay-3" appObserve>
           <a href="#projects" class="btn btn-primary"><span>View Projects</span></a>
-          <a href="mailto:{{basics.contact.email}}" class="btn btn-secondary">Contact Me</a>
+          <a href="mailto:{{ basics.contact.email }}" class="btn btn-secondary">Contact Me</a>
         </div>
       </div>
       <div class="hero-image animate-card delay-2" appObserve>
         <div class="image-border">
-          <img src="my-image.jpg" alt="Seif - Professional Photo" />
+          <img
+            [src]="theme.isLight() ? 'my-image-light.webp  ' : 'my-image-dark.webp'"
+            alt="Seif - Professional Photo"
+          />
         </div>
       </div>
     </div>
