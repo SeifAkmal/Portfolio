@@ -1,9 +1,7 @@
 # 👋 Seif Akmal – Front-End Portfolio
 
-A clean **single-page portfolio landing page** built with **Angular** to present my skills, selected projects, and profile as a **Junior Front-End Developer** in a clear and focused way.
-
-This project is all about **simplicity, performance, and clarity**.  
-No over-engineering. No unnecessary features. Just a solid, honest portfolio that reflects how I write and structure front-end code.
+A clean, performance-focused **Angular** portfolio highlighting my **front-end** skills and real-world projects.
+Built with clarity and simplicity in mind, focusing on clean structure, maintainable code, and practical UI decisions that reflect how I approach front-end development.
 
 ---
 
