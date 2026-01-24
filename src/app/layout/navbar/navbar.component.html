@@ -1,13 +1,17 @@
 <nav id="navbar">
   <div class="container">
     <a href="#hero" class="logo">Seif.</a>
-    <ul id="nav-menu">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
+    <ul id="nav-menu" [class.mobile-menu-open]="isMenuOpen()">
+      <li><a href="#hero" (click)="closeMenu()">Home</a></li>
+      <li><a href="#about" (click)="closeMenu()">About</a></li>
+      <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
+      <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
+      <li><a href="#education" (click)="closeMenu()">Education</a></li>
     </ul>
-    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+    @if (!isMenuOpen()) {
+      <button class="mobile-menu-btn" (click)="openMenu()">☰</button>
+    } @else {
+      <button class="mobile-menu-btn active" (click)="closeMenu()">✕</button>
+    }
   </div>
 </nav>

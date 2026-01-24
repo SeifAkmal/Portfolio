@@ -52,7 +52,7 @@ nav {
     font-weight: 800;
     background: linear-gradient(90deg, $purple-start, $purple-end, $purple-start);
     background-size: 200% 100%;
-
+    width: auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -100,15 +100,16 @@ nav {
       }
     }
   }
-
   a {
     color: $text-secondary;
     text-decoration: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 0.95rem;
     font-weight: 500;
     position: relative;
-
+    display: inline-block;
+    padding: 0.75rem 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
     &::after {
       content: '';
       position: absolute;
@@ -190,7 +191,6 @@ nav {
       li {
         width: 100%;
         text-align: center;
-        padding: 0.75rem 0;
         border-bottom: 1px solid $glass-border;
         opacity: 0;
         transform: translateY(-10px);
@@ -240,15 +240,6 @@ nav {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  nav .logo,
-  nav ul li,
-  .mobile-menu-btn {
-    animation: none !important;
-    opacity: 1 !important;
-    transform: none !important;
-  }
-}
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;

@@ -16,32 +16,6 @@ export const portfolioData = {
       github: 'https://github.com/SeifAkmal',
     },
   },
-  education: [
-    {
-      institution: 'Route Academy',
-      studyType: 'Diploma',
-      area: 'Frontend Web Development',
-      startDate: '2024',
-      endDate: '',
-    },
-    {
-      institution: 'El-Shorouk Academy',
-      studyType: "Bachelor's Degree",
-      area: 'Information Systems',
-      startDate: '2022 - ',
-      endDate: '2025',
-    },
-  ],
-  certifications: [
-    {
-      name: 'Frontend Web Development Diploma',
-      issuer: 'Route Academy',
-    },
-    {
-      name: 'CS50: Introduction to Computer Science',
-      issuer: 'Harvard University (Online)',
-    },
-  ],
   skills: {
     technical: [
       'Angular',
@@ -104,6 +78,32 @@ export const portfolioData = {
         github: 'https://github.com/SeifAkmal/Mini-Calories-Tracker.git',
         live: 'https://mini-calories-tracker.netlify.app',
       },
+    },
+  ],
+  education: [
+    {
+      institution: 'Route Academy',
+      studyType: 'Diploma',
+      area: 'Frontend Web Development',
+      startDate: '2024',
+      endDate: '',
+    },
+    {
+      institution: 'El-Shorouk Academy',
+      studyType: "Bachelor's Degree",
+      area: 'Information Systems',
+      startDate: '2022 - ',
+      endDate: '2025',
+    },
+  ],
+  certifications: [
+    {
+      name: 'Frontend Web Development Diploma',
+      issuer: 'Route Academy',
+    },
+    {
+      name: 'CS50: Introduction to Computer Science',
+      issuer: 'Harvard University (Online)',
     },
   ],
 };

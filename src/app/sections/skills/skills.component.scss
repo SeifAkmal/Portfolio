@@ -23,6 +23,7 @@
   font-weight: 500;
   position: relative;
   overflow: hidden;
+  cursor: default;
   &::before {
     content: '';
     position: absolute;
