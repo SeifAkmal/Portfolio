@@ -1,59 +1,81 @@
-# Portfolio
+# 👋 Seif Akmal – Front-End Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.5.
+A clean **single-page portfolio landing page** built with **Angular**, created to present my skills, projects, and profile as a **Junior Front-End Developer** in a clear and professional way.
 
-## Development server
+The focus of this project is **simplicity, performance, and clarity**.  
+No unnecessary complexity. No fake features. Just a solid developer portfolio.
 
-To start a local development server, run:
+---
+
+## ✨ What This Page Includes
+
+* Hero section with a clear personal introduction
+* Skills overview focused on Front-End development
+* Selected projects with GitHub links
+* Clean UI with dark / light mode
+* Fully responsive layout
+* Smooth, subtle animations without hurting performance
+* Simple contact section
+
+---
+
+## 🧰 Built With
+
+* **Angular**
+* **TypeScript**
+* **Angular Signals** (for UI state like theme toggling)
+* **SCSS**
+* **Modern CSS & transitions**
+* **Responsive design**
+
+---
+
+## 🧠 Project Philosophy
+
+This portfolio is intentionally built as a **single-page landing**.
+
+Goals:
+* Fast load time
+* Clear content hierarchy
+* No over-engineering
+* Code that is easy to read and maintain
+* A realistic representation of my current skill level
+
+---
+
+## 🚀 Run Locally
+
+### Prerequisites
+
+* Node.js (LTS recommended)
+* Angular CLI
+
+### Installation & Run
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then open your browser at:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🔗 Live Demo
 
-## Building
+If you would like to try the project and explore its features in action, you can access the live demo here:
 
-To build the project run:
+🚀 **Live Demo:** https://major-minto-store.netlify.app/home
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 👨‍💻 Author
 
-## Running unit tests
+**Seif Akmal**
+Front-End Developer (Angular)
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* GitHub: [https://github.com/SeifAkmal](https://github.com/SeifAkmal)
