@@ -10,7 +10,7 @@ export const portfolioData = {
       country: 'Egypt',
     },
     contact: {
-      email: 'seifakmal5@gmail.com',
+      email: 'seif.akmal.dev@outlook.com',
       phone: '+201013499043',
       linkedin: 'https://www.linkedin.com/in/seif-akmal/',
       github: 'https://github.com/SeifAkmal',
