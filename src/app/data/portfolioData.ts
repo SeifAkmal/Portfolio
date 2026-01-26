@@ -83,15 +83,15 @@ export const portfolioData = {
   education: [
     {
       institution: 'Route Academy',
-      studyType: 'Diploma',
-      area: 'Frontend Web Development',
-      startDate: '2024',
+      studyType: 'Professional Diploma',
+      area: 'Front-End Web Development Diploma',
+      startDate: '2022',
       endDate: '',
     },
     {
       institution: 'El-Shorouk Academy',
       studyType: "Bachelor's Degree",
-      area: 'Information Systems',
+      area: 'Management Information Systems (MIS)',
       startDate: '2022 - ',
       endDate: '2025',
     },
