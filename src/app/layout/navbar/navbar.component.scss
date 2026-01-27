@@ -5,8 +5,13 @@ nav {
   top: 0;
   width: 100%;
   background: $bg-nav;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(16px);
+    z-index: -1;
+  }
   border-bottom: 1px solid $glass-border;
   z-index: 1000;
   padding: 1.25rem 0;
@@ -74,8 +79,7 @@ nav {
     list-style: none;
     gap: 2.5rem;
     align-items: center;
-    li,
-    label {
+    li {
       opacity: 0;
       transform: translateY(-20px);
       animation: slideInDown 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
@@ -101,6 +105,7 @@ nav {
       }
       &:nth-child(6) {
         animation-delay: 0.9s;
+        padding: 0.75rem 0;
       }
     }
 
@@ -118,8 +123,6 @@ nav {
       }
 
       .slider {
-        --background: ;
-
         position: absolute;
         inset: 0;
         cursor: pointer;
@@ -191,12 +194,9 @@ nav {
   color: $text-primary;
   font-size: 1.75rem;
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   transform: translateX(30px);
-  animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
 }
-
-
 
 @keyframes slideInLeft {
   to {
@@ -206,6 +206,9 @@ nav {
 }
 
 @keyframes slideInDown {
+  from {
+    opacity: 0;
+  }
   to {
     opacity: 1;
     transform: translateY(0);
@@ -246,61 +249,48 @@ nav {
       top: 100%;
       left: 0;
       right: 0;
-      background: rgba(11, 11, 15, 0.98);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      background: $bg-nav;
+      backdrop-filter: blur(16px);
       border-bottom: 1px solid $glass-border;
       flex-direction: column;
       gap: 0;
-      padding: 1.5rem 0;
+      padding: 1.5rem 0 0 0;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-
-      &.mobile-menu-open {
-        display: flex;
-
-        li {
-          animation: slideInDown 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-
-          &:nth-child(1) {
-            animation-delay: 0.05s;
-          }
-
-          &:nth-child(2) {
-            animation-delay: 0.1s;
-          }
-
-          &:nth-child(3) {
-            animation-delay: 0.15s;
-          }
-
-          &:nth-child(4) {
-            animation-delay: 0.2s;
-          }
-
-          &:nth-child(5) {
-            animation-delay: 0.25s;
-          }
-        }
-      }
-
       li {
         width: 100%;
         text-align: center;
         border-bottom: 1px solid $glass-border;
-        opacity: 0;
-        transform: translateY(-10px);
+        opacity: 1;
+      }
+      &.mobile-menu-open {
+        display: flex;
 
-        &:last-child {
-          border-bottom: none;
+        li {
+          animation: slideInDown 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          transform: translateY(0);
+        }
+
+        li:nth-child(1) {
+          animation-delay: 0.1s;
+        }
+        li:nth-child(2) {
+          animation-delay: 0.15s;
+        }
+        li:nth-child(3) {
+          animation-delay: 0.2s;
+        }
+        li:nth-child(4) {
+          animation-delay: 0.25s;
+        }
+        li:nth-child(5) {
+          animation-delay: 0.3s;
+        }
+        li:nth-child(6) {
+          animation-delay: 0.35s;
         }
       }
     }
-
-    a::after {
-      display: none;
-    }
   }
-
   .mobile-menu-btn {
     display: block;
     opacity: 0;
