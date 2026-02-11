@@ -10,15 +10,15 @@
         You can explore my projects and experience on GitHub and LinkedIn, and reach out to me
         through the contact details listed there.
       </p>
-      <p class="animate-text-left text-delay-1" appObserve>El Shorouk, Cairo, Egypt</p>
+      <p class="animate-text-left text-delay-1" appObserve>Cairo, Egypt</p>
 
       <div class="contact-info">
-        <a href="{{ basics.contact.linkedin }}" target="_blank" class="contact-item">
+        <a [href]="basics.contact.linkedin" target="_blank" class="contact-item">
           <i class="fa-brands fa-linkedin-in"></i>
           <span>LinkedIn</span>
         </a>
 
-        <a href="mailto:{{ basics.contact.email }}" class="contact-item">
+        <a [href]="'mailto:' + basics.contact.email" class="contact-item">
           <i class="fa-solid fa-envelope"></i>
           <span>{{ basics.contact.email }}</span>
         </a>
@@ -28,10 +28,33 @@
           <span>GitHub</span>
         </a>
 
-        <a href="tel:{{ basics.contact.phone }}" class="contact-item">
+        <a [href]="'tel:' + basics.contact.phone" class="contact-item">
           <i class="fa-solid fa-phone"></i>
           <span>{{ basics.contact.phone }}</span>
         </a>
+
+        <button class="contact-item" (click)="toggleResume = true">
+          <i class="fa-solid fa-file-lines" [style.display]="toggleResume ? 'none' : 'block'"></i>
+          <span [style.display]="toggleResume ? 'none' : 'flex'">My Resume</span>
+          <a
+            [href]="basics.contact.cv"
+            target="_blank"
+            class="contact-item"
+            [style.display]="toggleResume ? 'flex' : 'none'"
+          >
+            <i class="fa-solid fa-file-lines"></i>
+            <span> View Resume</span>
+          </a>
+          <a
+            [href]="basics.contact.cv"
+            class="contact-item"
+            [style.display]="toggleResume ? 'flex' : 'none'"
+            download
+          >
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Download Resume</span>
+          </a>
+        </button>
       </div>
     </div>
   </div>

@@ -14,6 +14,7 @@ export const portfolioData = {
       phone: '+201013499043',
       linkedin: 'https://www.linkedin.com/in/seif-akmal/',
       github: 'https://github.com/SeifAkmal',
+      cv: '/Seif_Akmal_Junior_Frontend_Developer_Cv.pdf',
     },
   },
   skills: {
