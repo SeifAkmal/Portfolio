@@ -50,6 +50,10 @@
     font-size: 16px;
     opacity: 0.75;
   }
+  span {
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
 
   &:hover {
     color: $purple-end;
@@ -62,5 +66,11 @@
 @media (max-width: 968px) {
   .about-content {
     padding: 2.5rem;
+  }
+  .contact-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -1,9 +1,14 @@
 export const portfolioData = {
   basics: {
     name: 'Seif Akmal',
-    label: 'Frontend Developer',
-    summary:
-      'I’m a Frontend Developer specializing in Angular I enjoy turning designs and ideas into clean, responsive web interfaces. I focus on writing maintainable code, working with real APIs, and building user-friendly applications that actually make sense to use.',
+    label: 'Frontend Engineer',
+    summary: `As a Frontend Engineer, I build scalable, high-performance web applications using Angular, React, and Next.js.
+
+I am fully prepared to own the frontend lifecycle of a SaaS application—from architecture design to final deployment.
+
+I focus on writing maintainable code, handling complex user workflows, and performance optimization.
+
+For me, a great frontend balances clean code under the hood with a flawless user experience.`,
     location: {
       city: 'El-Shorouk',
       region: 'Cairo',
@@ -14,25 +19,42 @@ export const portfolioData = {
       phone: '+201013499043',
       linkedin: 'https://www.linkedin.com/in/seif-akmal/',
       github: 'https://github.com/SeifAkmal',
-      cv: '/Seif_Akmal_Junior_Frontend_Developer_Cv.pdf',
+      cv: '/Seif_Akmal_Frontend_Engineer.pdf',
     },
   },
   skills: {
     technical: [
+      // Frameworks & Core Libraries
       'Angular',
+      'React.js',
+      'Next.js',
+
+      // Core Languages
       'TypeScript',
       'JavaScript (ES6+)',
       'HTML5',
       'CSS3',
       'SCSS',
+
+      // State Management & Reactivity
       'RxJS',
       'Angular Signals',
       'NgRx (Basics)',
+      'Zustand / Redux Toolkit',
+
+      // Async Data & Forms
       'REST APIs',
+      'TanStack Query (React Query)',
+      'React Hook Form',
+
+      // UI Components & Styling
+      'Tailwind CSS',
+      'MUI (Material UI)',
       'Angular Material',
       'PrimeNG',
-      'Tailwind CSS',
       'Bootstrap',
+
+      // Tools
       'Git',
       'GitHub',
       'Figma',
@@ -44,7 +66,7 @@ export const portfolioData = {
       type: 'Web Application',
       description:
         'An Angular frontend integrated with a real REST API, handling authentication, medical data, and diagnostic reports. Built as part of a team-based project with a focus on clean architecture and scalability.',
-      technologies: ['Angular 18', 'TypeScript', 'REST APIs', 'RxJS', 'SCSS'],
+      technologies: ['Angular', 'TypeScript', 'REST APIs', 'RxJS', 'SCSS'],
       links: {
         github: 'https://github.com/SeifAkmal/Spinal.git',
         live: 'Coming soon',
@@ -53,10 +75,11 @@ export const portfolioData = {
     {
       name: 'Minto Store',
       type: 'E-Commerce Web Application',
-      description:
-        'An Angular e-commerce application featuring product listing, search and filtering, cart management, and a simulated checkout flow. Built with clean state handling and real-world application logic.',
+      description: ` Built a responsive Angular & TypeScript e-commerce frontend with a dynamic cart and checkout flow.
+Used Angular Signals for high-performance, reactive state management.
+Integrated REST APIs with offline fallback mechanisms to ensure a seamless user experience.`,
       technologies: [
-        'Angular 18',
+        'Angular',
         'TypeScript',
         'RxJS',
         'Mock REST API',
@@ -73,8 +96,8 @@ export const portfolioData = {
       name: 'Calories Tracker',
       type: 'Web Application',
       description:
-        'A lightweight Angular application for tracking daily meals and calorie intake, providing simple statistics such as total, average, and highest calorie values using local storage.',
-      technologies: ['Angular 18', 'TypeScript', 'SCSS'],
+        'Developed a lightweight Angular Single Page Application (SPA) for real-time calorie tracking.',
+      technologies: ['Angular', 'TypeScript', 'SCSS'],
       links: {
         github: 'https://github.com/SeifAkmal/Mini-Calories-Tracker.git',
         live: 'https://mini-calories-tracker.netlify.app',
@@ -85,7 +108,7 @@ export const portfolioData = {
     {
       institution: 'Route Academy',
       studyType: 'Professional Diploma',
-      area: 'Front-End Web Development Diploma',
+      area: 'Front-End Web Development Diploma ',
       startDate: '2022',
       endDate: '',
     },
@@ -99,12 +122,12 @@ export const portfolioData = {
   ],
   certifications: [
     {
-      name: 'Frontend Web Development Diploma',
+      name: 'Fullstack Web Development Diploma',
       issuer: 'Route Academy',
     },
     {
-      name: 'CS50: Introduction to Computer Science',
-      issuer: 'Harvard University (Online)',
+      name: 'CS50: Introduction to Computer Science (Online)',
+      issuer: 'Harvard University ',
     },
   ],
 };

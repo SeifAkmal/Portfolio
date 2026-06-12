@@ -12,6 +12,4 @@ import { SectionTitle } from '../../shared/ui/section-title/section-title.compon
 export class About {
   basics = portfolioData.basics;
   toggleResume: boolean = false;
-
-
 }
