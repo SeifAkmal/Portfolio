@@ -28,7 +28,7 @@ Built with clarity and simplicity in mind, focusing on clean structure, maintain
 
 ---
 
-## 🧠 Project Philosophy
+## 🧠 Project Philosphy
 
 This portfolio is intentionally built as a **single-page landing**.
 
