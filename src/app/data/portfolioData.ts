@@ -19,7 +19,7 @@ For me, a great frontend balances clean code under the hood with a flawless user
       phone: '+201013499043',
       linkedin: 'https://www.linkedin.com/in/seif-akmal/',
       github: 'https://github.com/SeifAkmal',
-      cv: '/Seif_Akmal_Frontend_Engineer.pdf',
+      cv: 'https://drive.google.com/file/d/1ekD5BFXZXQR6P8vVdH51ZWk1FaNko8Jj/view?usp=sharing',
     },
   },
   skills: {
